@@ -1,5 +1,131 @@
+/* Popins fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Inter fonts import */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    /* font-family: "Inter", sans-serif; */
+}
+/* Shared style */
+.display-flex{
+    display: flex;
+}
+
+/* header related style */
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 87px 120px 0;
+}
+.navbar{
+    max-width:1200px ;
+    border: 1px solid;
+    /* margin: 0 auto; */
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.brand-name{
+    max-width: 243px;
+}
+.brand-title{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.menubar{
+    gap: 34px ;
+    list-style: none;
+}
+.menu-item a{
+    text-decoration: none;
+    color: #3A3A3A;
+    font-size: 1rem;
+    font-weight: 500;
+}
+/* journey part releted style */
+.journey-container{
+    gap: 133px;
+    margin-bottom: 69px;
+}
+.journey-content{
+    padding: 70px 0 74px 0;
+}
+.journey{
+    max-height: 270px;
+    width: 582px;
+}
+.journey .journey-title{
+    font-size: 3.25rem;
+    font-weight: 700;
+    line-height: 70px;
+    color: #3A3A3A;
+    margin-bottom: 1rem;
+}
+.journey-description{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #3A3A3A;
+    margin-bottom: 1rem;
+}
+.btn{
+    padding: 10px 24px;
+    border-radius:41px ;
+    background: #E02C6D;
+    color: #FFF;
+    border: none;
+}
+.journey-images{
+    background-image: url(images/Circle\ design.svg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+.journey-images img{
+    width: 100%;
+}
+/* company container releted style */
+.company-container{
+    padding: 36px 62px;
+}
+.company-logo{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    gap: 61px;
+}
+
+/* Mobile device responsive designe */
+@media screen and (max-width:576px) {
+    .container{
+    padding: 17px 20px ;
+}
+    .navbar{
+        flex-direction: column;
+        gap: 20px;
+        
+    }
+    .journey-container{
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+    .journey{
+    width: 100%;
+}
+.journey-content,
+.journey-images{
+    width: 100%;
+}
+.company-container{
+    padding: 16px 12px;
+}
+.company-logo{
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
+    
 }
