@@ -108,6 +108,7 @@
 .popular-container{
     max-width: 1047px;
     margin: 0 auto;
+    margin-bottom: 100px;
 }
 .container-title{
     justify-content: center;
@@ -162,6 +163,43 @@
     margin-top: 10px;
 }
 
+/* Feture section releted style */
+.feuture-container{
+    margin-bottom: 100px;
+}
+.future-content{
+    max-width: 1110px;
+    margin: 0 auto;
+    gap: 96px;
+}
+.future-images{
+    max-width: 404px;
+    border-radius: 7px;
+}
+.content{
+    margin: auto 0;
+    max-width: 610px;
+}
+.title{
+    font-size: 2.37rem;
+    font-weight: 700;
+    line-height: 60px;
+    color:#0A0826 ;
+    margin-bottom: 16px;
+}
+.description{
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 28px;
+    color: #6C6C6C;
+    margin-bottom: 16px;
+}
+.btn-primary{
+    padding: 10px 24px;
+    background: #E02C6D;
+    color: #FFF;
+    border: none;
+}
 
 /* Mobile device responsive designe */
 @media screen and (max-width:576px) {
@@ -207,5 +245,21 @@
     margin-bottom: 15px;
     
 }
+.future-images{
+    max-width: 100%;
+}
+.feuture-container{
+    margin-bottom: 30px;
+}
+.future-content{
+    gap: 30px;
+     flex-direction: column-reverse;
+     text-align: center;
+     padding: 20px;
+}
+.content{
+    width: 100%;
+}
+
     
 }
